@@ -12,6 +12,7 @@ function Login() {
         e.preventDefault();
 
         auth
+        //this is Firebase method:
             .signInWithEmailAndPassword(email, password)
             .then(auth => {
                 history.push('/')
@@ -23,6 +24,7 @@ function Login() {
         e.preventDefault();
 
         auth
+        //this is Firebase method:
             .createUserWithEmailAndPassword(email, password)
             .then((auth) => {
                 // it successfully created a new user with email and password
